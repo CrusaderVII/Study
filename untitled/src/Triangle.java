@@ -3,7 +3,14 @@ public class Triangle extends Figure{
     private int length1;
     private int length2;
     private int length3;
+    Triangle (int length1, int length2, int length3) {
+        this.length1 = length1;
+        this.length2 = length2;
+        this.length3 = length3;
+    }
+    Triangle () {
 
+    }
     @Override
     public void draw() {
         super.draw();

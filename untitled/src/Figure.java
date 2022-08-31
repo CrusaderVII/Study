@@ -23,7 +23,7 @@ class Pentagon extends Figure {
 
     @Override
     public void area() {
-        System.out.println(((length/2)/Math.tan(36))*(length/2)/2*10);
+        System.out.println(((length/2)/Math.tan(Math.toRadians(36)))*(length/2)/2*10);
     }
 }
 
