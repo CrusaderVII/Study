@@ -1,3 +1,4 @@
+import static java.lang.Math.sqrt;
 public class Figure {
     //Methods
     public void area () {}
@@ -26,3 +27,58 @@ class Pentagon extends Figure {
     }
 }
 
+class Hexagon extends Figure {
+    private int length;
+    Hexagon (int length) {
+        this.length = length;
+    }
+
+    @Override
+    public void draw() {
+        super.draw();
+        System.out.println("hexagon");
+    }
+
+    @Override
+    public void area() {
+        System.out.println((3*sqrt(3)*length*length)/2);
+    }
+}
+
+class Circle extends Figure {
+    private int radius1;
+    Circle (int radius) {
+        this.radius1 = radius;
+    }
+
+    @Override
+    public void draw() {
+        super.draw();
+        System.out.println("circle");
+    }
+
+    @Override
+    public void area() {
+        System.out.println(radius1*radius1*Math.PI);
+    }
+}
+
+class Oval extends Figure {
+    private int radius1;
+    private int radius2;
+    Oval (int radius1, int radius2) {
+        this.radius1 = radius1;
+        this.radius2 = radius2;
+    }
+
+    @Override
+    public void draw() {
+        super.draw();
+        System.out.println("oval");
+    }
+
+    @Override
+    public void area() {
+        System.out.println(radius1*radius2*Math.PI);
+    }
+}
