@@ -3,10 +3,11 @@ import java.util.*;
 class Print {
 
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
+        FileReader reader = new FileReader("SJBM.txt");
+        Scanner sc = new Scanner(reader);
         String input = sc.nextLine();
         String [] array = input.split(" ");
-        sc.close();
+        reader.close();
         boolean flag = true;
         try {
             double num1 = Double.valueOf(array[0]);
